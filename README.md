@@ -19,74 +19,74 @@
 
 ## ⚙️ Setup 🔥
 
-- Vite Js
+### Vite Js
 
-  - npm create vite@latest
+- npm create vite@latest
 
-          project-name
-          react
-          typescript
+        project-name
+        react
+        typescript
 
-  - npm i
+- npm i
 
-- Tailwind
+### Tailwind
 
-  - npm install -D tailwindcss postcss autoprefixer
-  - npx tailwindcss init -p
-  - editar tailwind.config.cjs:
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
+- editar tailwind.config.cjs:
 
-        content: ['./src/**/*.tsx'],
+      content: ['./src/**/*.tsx'],
 
-  - criar global.css e importar no App.tsx:
+- criar global.css e importar no App.tsx:
 
-        @tailwind base;
-        @tailwind components;
-        @tailwind utilities;
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
 
-- Inter font family
+### Inter font family
 
-  - editar index.html no head:
+- editar index.html no head:
 
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-            rel="stylesheet"
-          />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
 
-  - editar tailwind.config.cjs:
+- editar tailwind.config.cjs:
 
-        extend: {
-          fontFamily: {
-            sans: 'Inter, sans-serif',
-          },
+      extend: {
+        fontFamily: {
+          sans: 'Inter, sans-serif',
         },
+      },
 
-- Storybook
+### Storybook
 
-  - npx sb init --builder @storybook/builder-vite --use-npm
+- npx sb init --builder @storybook/builder-vite --use-npm
 
-  - tema dark criar manager.js na pasta .storybook:
+- tema dark criar manager.js na pasta .storybook:
 
-        import { addons } from '@storybook/addons';
-        import { themes } from '@storybook/theming';
+      import { addons } from '@storybook/addons';
+      import { themes } from '@storybook/theming';
 
-        addons.setConfig({
+      addons.setConfig({
+        theme: themes.dark,
+      });
+
+- e editar preview.cjs
+
+      import { themes } from '@storybook/theming';
+
+      import '../src/styles/global.css';
+
+      export const parameters = {
+        ...,
+        docs: {
           theme: themes.dark,
-        });
-
-  - e editar preview.cjs
-
-        import { themes } from '@storybook/theming';
-
-        import '../src/styles/global.css';
-
-        export const parameters = {
-          ...,
-          docs: {
-            theme: themes.dark,
-          },
-        };
+        },
+      };
 
 ## 🔗 Links uteis 🔍
 
