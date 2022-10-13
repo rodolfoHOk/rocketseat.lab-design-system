@@ -17,6 +17,12 @@
 - @radix-ui/react-checkbox
 - phosphor-react
 
+## 🖼️ Imagens do projeto 👀
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/ignite-lab-ds-01.png" alt="NLW eSports Imagem 01" width="450"/>
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/ignite-lab-ds-02.png" alt="NLW eSports Imagem 01" width="450"/>
+
 ## ⚙️ Setup 🔥
 
 ### Vite Js
