@@ -1,4 +1,5 @@
 import { InputHTMLAttributes, ReactNode } from 'react';
+import { UseFormRegister, Path } from 'react-hook-form';
 import { Slot } from '@radix-ui/react-slot';
 
 export interface TextInputRootProps {
@@ -26,13 +27,17 @@ function TextInputIcon({ children }: TextInputIconProps) {
 TextInputIcon.displayName = 'TextInput.Icon';
 
 export interface TextInputInputProps
-  extends InputHTMLAttributes<HTMLInputElement> {}
+  extends InputHTMLAttributes<HTMLInputElement> {
+  label: Path<any>;
+  register: UseFormRegister<any>;
+}
 
-function TextInputInput(props: TextInputInputProps) {
+function TextInputInput({ label, register, ...rest }: TextInputInputProps) {
   return (
     <input
       className="bg-transparent flex-1 outline-none text-xs text-gray-100 placeholder:text-gray-400"
-      {...props}
+      {...rest}
+      {...register(label)}
     />
   );
 }

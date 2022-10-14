@@ -16,12 +16,24 @@
 - @radix-ui/react-slot
 - @radix-ui/react-checkbox
 - phosphor-react
+- @storybook/addon-a11y
+- @storybook/storybook-deployer
+- @storybook/addon-interactions
+- @storybook/jest
+- @storybook/testing-library
+- @storybook/test-runner
+- axios
+- msw
+- msw-storybook-addon
+- react-hook-form
 
 ## 🖼️ Imagens do projeto 👀
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/ignite-lab-ds-01.png" alt="NLW eSports Imagem 01" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/ignite-lab-ds-01.png" alt="Ignite Lab Design System Imagem 01" width="450"/>
 
-<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/ignite-lab-ds-02.png" alt="NLW eSports Imagem 01" width="450"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/ignite-lab-ds-02.png" alt="Ignite Lab Design System Imagem 02" width="450"/>
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/ignite-lab-ds-03.png" alt="Ignite Lab Design System Imagem 03" width="450"/>
 
 ## ⚙️ Setup 🔥
 
