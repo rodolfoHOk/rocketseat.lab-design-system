@@ -114,6 +114,11 @@
 - https://www.radix-ui.com/docs/primitives/utilities/slot
 - https://www.radix-ui.com/docs/primitives/components/checkbox
 - https://phosphoricons.com/
+- https://storybook.js.org/addons/@storybook/addon-a11y
+- https://github.com/storybookjs/storybook-deployer
+- https://storybook.js.org/addons/@storybook/addon-interactions
+- https://github.com/mswjs/msw-storybook-addon
+- https://react-hook-form.com/
 
 ## Deploy url
 
