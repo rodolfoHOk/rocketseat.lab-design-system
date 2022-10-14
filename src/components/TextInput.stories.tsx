@@ -11,7 +11,7 @@ export default {
   argTypes: {},
 } as Meta<TextInputRootProps>;
 
-function Template(): StoryFnReactReturnType {
+function Template(args: TextInputRootProps): StoryFnReactReturnType {
   const { register } = useForm();
   const label = 'email';
 
@@ -30,7 +30,7 @@ function Template(): StoryFnReactReturnType {
   );
 }
 
-function TemplateWithoutIcon(): StoryFnReactReturnType {
+function TemplateWithoutIcon(args: TextInputRootProps): StoryFnReactReturnType {
   const { register } = useForm();
   const label = 'email';
 

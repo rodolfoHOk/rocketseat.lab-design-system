@@ -10,7 +10,7 @@ export default {
   argTypes: {},
 } as Meta<CheckboxProps>;
 
-function Template(): StoryFnReactReturnType {
+function Template(args: CheckboxProps): StoryFnReactReturnType {
   const { register, setValue } = useForm();
   const label = 'remember';
 
